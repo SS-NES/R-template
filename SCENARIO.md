@@ -6,8 +6,11 @@ to streamline the adoption of best software development practices in the NES dom
 By leveraging the meta template, essential files that help a project adhere to the FAIR principles
 such as licenses, CODEOFCONDUCT.md, README.md, 
 and others were automatically included, eliminating the need for manual setup.
-This also improves maintainability as updates such as changes in licenses can easily
-be synced using copier update
+This also improves maintainability as updates in the meta-template such as changes in license files can easily
+be synced using
+```bash
+copier update --answers-file .meta-answers.yml
+```
 
 ## Purpose
 This template is designed for R users working on data analysis, statistical 
