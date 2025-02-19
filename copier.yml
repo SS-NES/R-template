@@ -26,6 +26,11 @@ community:
     default: False
     help: Do you intent to have a community around "{{ software_name }}"?
 
+code_of_conduct:
+    type: bool
+    default: False
+    help: Do you want to include a code of conduct for "{{ software_name }}"?
+    
 contact_email:
     type: str
     help: What's the contact email for the code of conduct"?
@@ -75,21 +80,6 @@ package_name:
     type: str
     help: What name you want to use for your Python package?
     default: "{{ software_name | lower }}"
-
-documentation:
-    type: bool
-    default: False
-    help: Do you plan to write extensive documentation for "{{ software_name }}"?
-
-documentation_type:
-    type: str
-    default: "user"
-    help: For who do you plan to write documentation for "{{ software_name }}"?
-    choices:
-        - user
-        - developer
-        - user & developer
-    when: "{{ documentation == True }}"
 
 ---
 # Uncomment the line below to include custom questions

@@ -1,5 +1,6 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v1.10
+_commit: v1.19
 _src_path: https://github.com/SS-NES/meta-template
+code_of_conduct: true
 description: A template for R users
 template_name: R-template
